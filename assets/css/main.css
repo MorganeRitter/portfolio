@@ -3950,3 +3950,11 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+.comp {
+	background: white;
+	border-radius: 300PX;
+	padding: 0 !important;
+	margin-right: 1em;
+	margin-bottom: 1em !important;
+}
