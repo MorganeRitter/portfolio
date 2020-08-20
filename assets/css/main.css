@@ -3375,6 +3375,7 @@ input, select, textarea {
 
 /* Banner */
 
+	#banner-main,
 	#banner {
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3400,6 +3401,7 @@ input, select, textarea {
 		top: -3.25em;
 	}
 
+		#banner-main:after,
 		#banner:after {
 			-moz-transition: opacity 2.5s ease;
 			-webkit-transition: opacity 2.5s ease;
@@ -3422,10 +3424,12 @@ input, select, textarea {
 			z-index: 1;
 		}
 
+		#banner-main h1,
 		#banner h1 {
 			font-size: 3.25em;
 		}
 
+			#banner-main > .inner,
 		#banner > .inner {
 			-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
 			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
@@ -3436,22 +3440,26 @@ input, select, textarea {
 			z-index: 2;
 		}
 
-		/*	#banner > .inner .image {
+			#banner > .inner .image {
 				display: none;
-			}*/
+			}
 
+			#banner-main > .inner header,
 			#banner > .inner header {
 				width: auto;
 			}
 
+	#banner-main > .inner header > :first-child,
 				#banner > .inner header > :first-child {
 					width: auto;
 				}
 
+					#banner-main > .inner header > :first-child::after,
 					#banner > .inner header > :first-child:after {
 						max-width: 100%;
 					}
 
+	#banner-main > .inner .content,
 			#banner > .inner .content {
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -3464,15 +3472,18 @@ input, select, textarea {
 				margin: 0 0 2em 0;
 			}
 
+				#banner-main > .inner .content > *,
 				#banner > .inner .content > * {
 					margin-right: 1.5em;
 					margin-bottom: 0;
 				}
 
+					#banner-main > .inner .content > :last-child,
 				#banner > .inner .content > :last-child {
 					margin-right: 0;
 				}
 
+				#banner-main > .inner .content p,
 				#banner > .inner .content p {
 					font-size: 0.7em;
 					font-weight: 600;
@@ -3480,44 +3491,46 @@ input, select, textarea {
 					text-transform: uppercase;
 				}
 
+			#banner-main.major,
 		#banner.major {
 			height: 75vh;
 			min-height: 30em;
 			max-height: 50em;
 		}
 
+			#banner-main.major.alt,
 			#banner.major.alt {
 				opacity: 0.75;
 			}
-
+#banner-main.style1:after,
 		#banner.style1:after {
 			background-color: #6fc3df;
 		}
-
+#banner-main.style2:after,
 		#banner.style2:after {
 			background-color: #8d82c4;
 		}
-
+#banner-main.style3:after,
 		#banner.style3:after {
 			background-color: #ec8d81;
 		}
-
+#banner-main.style4:after,
 		#banner.style4:after {
 			background-color: #e7b788;
 		}
-
+#banner-main.style5:after,
 		#banner.style5:after {
 			background-color: #8ea9e8;
 		}
-
+#banner-main.style6:after,
 		#banner.style6:after {
 			background-color: #87c5a4;
 		}
-
+body.is-preload #banner-main:after,
 		body.is-preload #banner:after {
 			opacity: 1.0;
 		}
-
+body.is-preload #banner-main > .inner,
 		body.is-preload #banner > .inner {
 			-moz-filter: blur(0.125em);
 			-webkit-filter: blur(0.125em);
@@ -3531,7 +3544,7 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
-
+#banner-main,
 			#banner {
 				background-attachment: scroll;
 			}
@@ -3539,7 +3552,7 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+#banner-main,
 			#banner {
 				padding: 5em 0 1em 0 ;
 				height: auto;
@@ -3548,20 +3561,20 @@ input, select, textarea {
 				min-height: 0;
 				top: -2.75em;
 			}
-
+#banner-main h1,
 				#banner h1 {
 					font-size: 2em;
 				}
-
+#banner-main > .inner .content,
 				#banner > .inner .content {
 					display: block;
 				}
-
+#banner-main > .inner .content > *,
 					#banner > .inner .content > * {
 						margin-right: 0;
 						margin-bottom: 2em;
 					}
-
+#banner-main.major,
 				#banner.major {
 					height: auto;
 					min-height: 0;
@@ -3571,15 +3584,15 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
-
+#banner-main,
 			#banner {
 				padding: 6em 0 2em 0 ;
 			}
-
+#banner-main > .inner .content p br,
 				#banner > .inner .content p br {
 					display: none;
 				}
-
+#banner-main.major,
 				#banner.major {
 					padding: 8em 0 4em 0 ;
 				}

@@ -219,13 +219,16 @@
 				$this._parallax(0.275);
 
 			// Image.
-				if ($image.length > 0) {
+				if($image.hasClass('NoTouch'))
+				{
+					
+				} else if ($image.length > 0) {
 
 					// Set image.
-						//$this.css('background-image', 'url(' + $img.attr('src') + ')');
+						$this.css('background-image', 'url(' + $img.attr('src') + ')');
 
 					// Hide original.
-						//$image.hide();
+						$image.hide();
 
 				}
 
